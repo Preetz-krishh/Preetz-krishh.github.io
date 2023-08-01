@@ -1,0 +1,381 @@
+.contact,
+.contact-box {
+  flex-direction: column;
+}
+.Socials,
+.contact,
+.contact-box,
+.contact-title,
+.resume-title {
+  text-align: center;
+}
+
+.profile-image {
+  animation: 1s slide-in;
+}
+.portfolio-image{
+  animation: 1s slide-out;
+}
+.profile-image {
+  float: right;
+  margin-right: 25px;
+}
+.dragon {
+  overflow: hidden;
+  margin-left: 10px;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 1.5s steps(25, end), blink-caret 0.5s step-end infinite;
+  animation-fill-mode: forwards;
+}
+
+/* The typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The caret animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+/* Add styles to the span element */
+.dragon span {
+  color: orange;
+  font-weight: bold;
+}
+
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+body {
+  background-image: url(images/Anime-Aesthetic-Wallpaper-Phone.png), url(images/wallll.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, left bottom;
+  font-family: "Open Sans", sans-serif;
+}
+.boss {
+  float: left;
+  margin-left: 25px;
+  max-width: 500px;
+}
+.titular-text {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.titular-text p {
+  opacity: 0; 
+  animation: 2s forwards fade-in;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-out {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes reverse-typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container-port {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio-description {
+  float: right;
+  text-align: right;
+  margin-right: 20px;
+}
+.project {
+  overflow: hidden;
+  direction: rtl; 
+  white-space: nowrap;
+  animation: typing-reverse 1s steps(20, end) forwards;
+}
+
+@keyframes typing-reverse {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
+.portfolio-description p {
+  overflow: hidden;
+  max-width: 700px;
+  animation: 2s forwards fade-in
+}
+.contact-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.contact-link span {
+  font-size: 18px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.441);
+  backdrop-filter: blur(5px);
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 60px;
+  position: relative; 
+}
+
+nav a:not(:last-child)::after {
+  content: "|"; 
+  position: absolute;
+  right: -10px; 
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.profile-image img {
+  float: right;
+  width: 325px;
+  height: 325px;
+}
+.portfolio-image img {
+  float: left;
+  border-radius: 20px;
+  width : 400px; 
+  height: 100%;
+  margin-right: 25px;
+  
+}
+.resume-image {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.resume-image img {
+  height: 100%;
+  transition: height 1s ease-out;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.animated-link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  animation: animated-link 0.5s forwards ease-in-out;
+}
+
+@keyframes animated-link {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+a,
+body,
+h1,
+h2,
+h3,
+p {
+  color: #fff;
+}
+.contact-link {
+  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff54;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  width: 80%;
+}
+.Socials {
+  float: left;
+}
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact {
+  display: flex;
+  align-items: center;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-link {
+  margin: 0.5em 0.5em 20px;
+  display: flex;
+  align-items: center;
+}
+.contact-link img {
+  width: 30px;
+  height: 30px;
+}
+.container-port {
+  flex-direction: row;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+body {
+  overflow-y: scroll; 
+}
+.contact-box {
+  opacity: 1;
+  width: 80%;
+}
+
+.contact-link {
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: contact-animation 0.5s forwards ease-in-out;
+}
+
+.contact-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.contact-link:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.contact-link:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.contact-link:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.contact-link:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+@keyframes contact-animation {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.contact-box.animated {
+  animation: contact-box-animation 0.5s forwards ease-in-out;
+}
+
+@keyframes contact-box-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
